@@ -1,0 +1,14 @@
+将修辞手法分为"比喻"、"比拟"、"夸张"和"排比"四种。
+生成1句使用了{{ rhetoric }}修辞手法的句子，要求句子中出现的{% if rhetoric == '比喻' %}本体是{{ object }}{% elif rhetoric == '比拟' %}比拟对象是{{ object }}{% else %}夸张对象是{{ object }}{% endif %}。使用JSON格式输出，字段名称为"generation"，不要解释。
+{% if previous_sentences is not none %}
+这句话的上文如下：
+{% for previous_sentence in previous_sentences %}
+{{ previous_sentence }}
+{% endfor %}
+{% endif %}
+输出格式如下：
+{
+    "generation": "生成的句子"
+}
+根据要求，直接输出JSON格式回答。
+输出：

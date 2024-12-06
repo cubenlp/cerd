@@ -1,0 +1,13 @@
+torch==2.1.0
+transformers==4.38.2
+deepspeed==0.13.1
+peft==0.7.1
+accelerate==0.27.2
+numpy==1.26.2
+pandas==2.1.4
+backoff==2.2.1
+evaluate==0.4.1
+Jinja2==3.1.2
+openai==1.6.1
+fire==0.6.0
+tqdm==4.66.1

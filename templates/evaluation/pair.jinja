@@ -1,0 +1,20 @@
+考虑修辞手法在作文句子中的使用情况，根据评分标准，比较给出的两个句子。如果两个句子表现相当，则输出0；如果句子1表现显著好于句子2，则输出1；如果句子2表现显著好于句子1，则输出2；直接使用JSON格式输出，字段名称为"ranking"，不要解释。
+
+评分标准：
+句子是否通顺流畅，是否正确地使用了要求的修辞手法，如果有上文则句子内容与上文是否关联性强，且通过修辞手法的运用是否显著增强了文章的表达效果和感染力。
+
+修辞手法的要求：
+使用{{ rhetoric }}修辞手法，句子中要求出现的{% if rhetoric == '比喻' %}本体是{{ object }}{% elif rhetoric == '比拟' %}比拟对象是{{ object }}{% else %}夸张对象是{{ object }}{% endif %}。
+{% if previous_sentences is not none %}
+这句话的上文如下：
+{% for previous_sentence in previous_sentences %}
+{{ previous_sentence }}
+{% endfor %}
+{% endif %}
+
+作文句子1：
+{{ reference }}
+作文句子2：
+{{ prediction }}
+根据要求，直接输出JSON格式回答。
+打分：
