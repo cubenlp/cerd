@@ -2,11 +2,15 @@
 
 This is the official repository for the paper *CERD: A Comprehensive Chinese Rhetoric Dataset for Rhetorical Understanding and Generation in Essays*. (Accepted by EMNLP 2024 Findings)
 
-\[Dataset\] | \[[Paper](https://arxiv.org/abs/2409.19691)\]
+\[Dataset\] | \[[Paper](https://aclanthology.org/2024.findings-emnlp.395.pdf)\]
 
 ![](./docs/example.png)
 
 # Code and Dataset
+
+## Dataset
+
+For now, please contact via email at nwliu@stu.ecnu.edu.cn
 
 ## Fine-tuning
 
@@ -68,13 +72,27 @@ evaluator.evaluate()
 # Citation
 
 ```bibtex
-@misc{liu2024cerd,
-    title={CERD: A Comprehensive Chinese Rhetoric Dataset for Rhetorical Understanding and Generation in Essays}, 
-    author={Nuowei Liu and Xinhao Chen and Hongyi Wu and Changzhi Sun and Man Lan and Yuanbin Wu and Xiaopeng Bai and Shaoguang Mao and Yan Xia},
-    year={2024},
-    eprint={2409.19691},
-    archivePrefix={arXiv},
-    primaryClass={cs.CL},
-    url={https://arxiv.org/abs/2409.19691}, 
+@inproceedings{liu-etal-2024-cerd,
+    title = "{CERD}: A Comprehensive {C}hinese Rhetoric Dataset for Rhetorical Understanding and Generation in Essays",
+    author = "Liu, Nuowei  and
+      Chen, Xinhao  and
+      Wu, Hongyi  and
+      Sun, Changzhi  and
+      Lan, Man  and
+      Wu, Yuanbin  and
+      Bai, Xiaopeng  and
+      Mao, Shaoguang  and
+      Xia, Yan",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
+    month = nov,
+    year = "2024",
+    address = "Miami, Florida, USA",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-emnlp.395/",
+    doi = "10.18653/v1/2024.findings-emnlp.395",
+    pages = "6744--6759"
 }
 ```
